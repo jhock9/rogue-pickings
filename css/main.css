@@ -1,0 +1,201 @@
+/***** BASE STYLES *****/
+
+@font-face {
+    font-family: "WisdomScriptAJ";
+    src: url('../fonts/WisdomScriptAJ.eot') format('eot');
+    src: url('../fonts/WisdomScriptAJ.ttf') format('ttf');
+    src: url('../fonts/WisdomScriptAJ.woff') format('woff');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/***** GRID *****/
+
+#home .third-width {
+    width: 399px;
+    height: auto;
+    float: left;
+}
+
+/***** HEADER-ALL PAGES *****/
+
+header {
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    float: left;
+    margin: 25px 0;
+}
+
+header h1 span {
+    color: #77a466
+}
+
+nav {
+    float: right;
+    margin: 20px 0;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #77a466;
+    padding: 0 10px;
+}
+
+/***** FOOTER-ALL PAGES *****/
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #dedbdc;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+footer h4 span{
+    font-family: 'WisdomScriptAJ';
+    color: #77a466;
+    text-transform: lowercase;
+    font-weight: lighter;
+}
+
+/***** HOME PAGE-TOP SECTION *****/
+
+#top-section img {
+    border-top: 3px solid #77a466;
+    border-bottom: 3px solid #77a466;
+    clear: both;
+}
+
+#top-section h2 {
+    font-size: 18px;
+    color: #77a466;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 20px 0;
+}
+
+#top-section p {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 0 20px 0;
+    margin: 0;
+    border-bottom: 1px solid #dedbdc;
+}
+
+/***** HOME PAGE-BOTTOM SECTION *****/
+
+#specials h3, #reviews h3, #contact h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#specials h3 {
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+#specials ul {
+    list-style: none;
+    padding: 0;
+}
+
+#specials li {
+    font-size: 16px;
+    line-height: 40px;
+    text-align: left;
+    color: #77a466;
+}
+
+#reviews {
+    border-left: 1px solid #dedbdc;
+    border-right: 1px solid #dedbdc;
+}
+
+#reviews h3 {
+    margin: 15px 0;
+    padding: 10px 30px;
+}
+
+#reviews p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0;
+    padding: 0 30px;
+}
+
+#contact h3 {
+    margin: 15px 0;
+    padding: 10px 30px;
+}
+
+#contact p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+    padding: 0 30px;
+}
+
+/***** MENU PAGE *****/
+
+#menu h2 {
+    font-family: 'WisdomScriptAJ';
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    margin: 0; 
+    border-top: 1px solid #dedbdc;
+    clear: both;
+}
+
+#menu h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #77a466;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px;
+    margin: 0; 
+}
+
+#menu .third-width {
+    width: 390px;
+    height: auto;
+    float: left;
+    margin: 5px;
+    padding: 0 0 10px 0;
+}
+
+#salad, #burrito, #tamales {
+    max-width: 100%;
+    height: auto;
+}
+
+#menu p {
+    font-size: 14px;
+    text-align: center;
+}
