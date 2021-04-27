@@ -1,5 +1,12 @@
 /***** BASE STYLES *****/
 
+@font-face {
+    font-family: "WisdomScriptAJ";
+    src: url('../fonts/WisdomScriptAJ.eot') format('eot');
+    src: url('../fonts/WisdomScriptAJ.ttf') format('ttf');
+    src: url('../fonts/WisdomScriptAJ.woff') format('woff');
+}
+
 html {
     font-size: 16px;
 }
@@ -23,7 +30,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     color: black;
     text-transform: uppercase;
     font-weight: 700;
@@ -37,7 +45,8 @@ h2 {
     font-size: 1.125em;
 }
 
-h3 {
+h3,
+h4 {
     font-size: .75em;
 }
 
@@ -139,7 +148,7 @@ footer span {
 
 #main-text p {
     font-size: 1em;
-    line-height: 25px;
+    line-height: 24px;
     padding: 0;
 }
 
@@ -162,37 +171,42 @@ footer span {
 
 #reviews {
     font-size: 1em;
-    line-height: 25px;
+    line-height: 24px;
 }
 
 #contact {
     font-size: 1em;
-    line-height: 25px;
+    line-height: 24px;
 }
 
 /***** MENU PAGE *****/
+
+#menu header {
+	border-bottom: 3px solid #77a466;
+}
 
 #menu h2 {
     font-family: 'WisdomScriptAJ';
     font-weight: lighter;
     text-transform: capitalize;
     text-align: center;
-    padding: 30px 0 10px 0;
-    margin: 0; 
-    border-top: 1px solid #dedbdc;
+    font-size: 1.875em;
 }
 
 #menu h3 {
     color: #77a466;
     text-align: center;
-    padding: 30px;
+    padding: 20px 0;
+    font-size: 1em;
     margin: 0; 
 }
 
-#menu .third-width {
-    width: 390px;
-    margin: 5px;
-    padding: 0 0 10px 0;
+#menu .bottom-section,
+#menu .section-one,
+#menu .section-two,
+#menu .section-three {
+	width: 100%;
+    border: none;
 }
 
 #salad, #burrito, #tamales {
@@ -201,13 +215,21 @@ footer span {
 
 #menu p {
     text-align: center;
+    font-size: 1em;
+    line-height: 24px;
 }
 
 /***** MEDIA QUERIES *****/
 
 /*Tablet*/
 @media all and (min-width: 768px) {
-	.bottom-section{
+	header nav ul {
+        padding: 0 10%;
+        display: flex;
+		justify-content: space-around;
+	}
+
+    .bottom-section {
 		justify-content: space-between;
 		align-items: flex-start;
         border-top: 1px solid #eee;
@@ -215,12 +237,12 @@ footer span {
 
 	.section-one,
 	.section-two,
-	.section-three{
+	.section-three {
 		border-top: none;
 		flex-basis: 30%;
 	}
 
-	.section-two{
+	.section-two {
 		padding: 0 20px;
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
@@ -229,11 +251,11 @@ footer span {
 
 /*Desktop*/
 @media all and (min-width: 1200px) {
-	header{
+	header {
 		justify-content: space-between;
 	}
 
-	header h1{
+	header h1 {
 		width: 30%;
 		padding: 0;
 		border-bottom: none;
@@ -244,8 +266,9 @@ footer span {
 		width: 40%
 	}
 
-	header nav ul{
-		display: flex;
-		justify-content: space-between;
+	header nav ul {
+		padding: 0;
+        display: flex;
+        justify-content: space-between;
 	}
 }
