@@ -1,7 +1,10 @@
 <!doctype html>
-<html lang="en">    
+<html lang="en">
+
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Rogue Pickings | Portfolio</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -9,11 +12,9 @@
     </head>
     
     <body id="home">
-        <header class="full-width">
-            <div class="half-width">
+        <div class="container">
+            <header>
                 <h1><span>Rogue</span> Pickings</h1>
-            </div>
-            <div class="half-width">
                 <nav>
                     <ul>
                         <li><a href="index.html">About</a></li>
@@ -24,18 +25,18 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
-            </div>   
-        </header>
+            </header>
 
-        <main>
-            <section class= "full-width" id="top-section">
-                <img src="img/main-image.png" alt="green beans" />
-                <h2>Welcome to our little corner of the internet!</h2>
-                <p>Welcome to Rogue Pickings, the roaming truck bringing you the freshest ingredients and ideas in food. Our team works hard so you can be sure our ingredients are always fresh and picked carefully. Our menu changes every day and is made with you in mind. We can't wait to come to you! Check out our locations to see where you can find us.</p>
+            <section class="top-section">
+                <div id="main-image"><img src="img/main-image.png" alt="green beans" /></div>
+                <div id="main-text">
+                    <h2>Welcome to our little corner of the internet!</h2>
+                    <p>Welcome to Rogue Pickings, the roaming truck bringing you the freshest ingredients and ideas in food. Our team works hard so you can be sure our ingredients are always fresh and picked carefully. Our menu changes every day and is made with you in mind. We can't wait to come to you! Check out our locations to see where you can find us.</p>
+                </div>
             </section>
 
-            <section class="full-width" id="bottom-section">  
-                <div class="third-width" id="specials">
+            <section class="bottom-section">  
+                <div class="section-one" id="specials">
                     <h3>Today's Specials</h3>
                         <ul>
                             <li>Flaming Hummus &amp; Falafel Salad</li>
@@ -43,11 +44,13 @@
                             <li>Green Gloves Tamales</li>
                         </ul>
                 </div>
-                <div class="third-width" id="reviews">
+
+                <div class="section-two" id="reviews">
                     <h3>Our Awesome Reviews</h3>
                     <p>"I got so excited about the yumminess of the falafel salad that I am typing this review as I inhale my lunch. Yes it is that good.... Service was super friendly and quick. Can't wait see you Rogue Pickings again tomorrow!"</p>
                 </div>
-                <div class="third-width" id="contact">
+                
+                <div class="section-three" id="contact">
                     <h3>Contact Us</h3>
                     <p>1001 Potrero Avenue<br>
                         San Francisco, CA 94110<br>
@@ -58,6 +61,6 @@
             <footer>
                     <h4>Powered by lots of <span>fresh</span> ingredients</h4>
             </footer>
-        </main>
+        </div>
     </body>
 </html>
