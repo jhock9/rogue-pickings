@@ -201,6 +201,7 @@ footer span {
     margin: 0; 
 }
 
+/*cant figure out how to keep these three images from not staying aligned when flexing*/
 #menu .bottom-section,
 #menu .section-one,
 #menu .section-two,
