@@ -7,195 +7,269 @@
     src: url('../fonts/WisdomScriptAJ.woff') format('woff');
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
-    width: 1200px;
-    margin: 0 auto;
+html {
+    font-size: 16px;
 }
 
-/***** GRID *****/
+body {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
 
-#home .third-width {
-    width: 399px;
-    height: auto;
-    float: left;
+.container {   
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.875em;
+}
+
+h2 {
+    font-size: 1.125em;
+}
+
+h3,
+h4 {
+    font-size: .75em;
+}
+
+p {
+    font-size: .875em;
+    line-height: 21px;
+}
+
+ul {
+    margin: 0
 }
 
 /***** HEADER-ALL PAGES *****/
 
 header {
-    text-transform: uppercase;
-    margin: 0 auto;
+    border-bottom: 3px solid #77a466;
+	text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header h1 {
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    float: left;
-    margin: 25px 0;
+	margin: 0;
+    padding: 38px 20px 20px 20px; 
+	border-bottom: 3px solid #77a466;
+	width: 100%;
 }
 
 header h1 span {
     color: #77a466
 }
 
-nav {
-    float: right;
-    margin: 20px 0;
+header nav {
+    padding: 20px 0;
+    width: 100%;
 }
 
-nav ul li{
-    display: inline;
+header nav ul {
+	margin: 0;
+	padding: 0;
 }
 
-nav ul li a {
+header nav ul li {
     text-transform: uppercase;
+    font-size: .875em;
+    font-weight: 700;  
+    padding: 10px 0;
+    list-style: none;
+}
+
+header nav ul li a {
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
     color: #77a466;
-    padding: 0 10px;
 }
 
 /***** FOOTER-ALL PAGES *****/
 
 footer {
-    clear: both;
+    border-top: 3px solid #eee;
     text-align: center;
-    padding: 10px;
-    border-top: 1px solid #dedbdc;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
-footer h4 {
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-footer h4 span{
-    font-family: 'WisdomScriptAJ';
+footer span {
+    font-family: 'Galada', cursive;
     color: #77a466;
     text-transform: lowercase;
+    font-size: 1.1em;
     font-weight: lighter;
 }
 
-/***** HOME PAGE-TOP SECTION *****/
+/***** HOME PAGE-SECTIONS *****/
 
-#top-section img {
-    border-top: 3px solid #77a466;
+.top-section,
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#main-image img {
     border-bottom: 3px solid #77a466;
-    clear: both;
+    width: 100%;
 }
 
-#top-section h2 {
-    font-size: 18px;
+#main-text h2 {
     color: #77a466;
-    text-transform: uppercase;
     text-align: left;
-    margin: 20px 0;
+    padding: 5px 0;
 }
 
-#top-section p {
-    font-size: 16px;
-    line-height: 25px;
-    padding: 0 0 20px 0;
-    margin: 0;
-    border-bottom: 1px solid #dedbdc;
+#main-text p {
+    font-size: 1em;
+    line-height: 24px;
+    padding: 0;
 }
 
-/***** HOME PAGE-BOTTOM SECTION *****/
-
-#specials h3, #reviews h3, #contact h3 {
-    font-size: 12px;
-    text-transform: uppercase;
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	border-top: 1px solid #eee;
 }
 
-#specials h3 {
-    margin: 15px 0;
-    padding: 10px 0;
-}
-
-#specials ul {
+#specials {
     list-style: none;
     padding: 0;
 }
 
 #specials li {
-    font-size: 16px;
-    line-height: 40px;
-    text-align: left;
+    padding: 10px 0;
     color: #77a466;
 }
 
 #reviews {
-    border-left: 1px solid #dedbdc;
-    border-right: 1px solid #dedbdc;
-}
-
-#reviews h3 {
-    margin: 15px 0;
-    padding: 10px 30px;
-}
-
-#reviews p {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 15px 0;
-    padding: 0 30px;
-}
-
-#contact h3 {
-    margin: 15px 0;
-    padding: 10px 30px;
-}
-
-#contact p {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 24px;
-    margin: 15px 0;
-    padding: 0 30px;
+}
+
+#contact {
+    font-size: 1em;
+    line-height: 24px;
 }
 
 /***** MENU PAGE *****/
 
+#menu header {
+	border-bottom: 3px solid #77a466;
+}
+
 #menu h2 {
     font-family: 'WisdomScriptAJ';
-    font-size: 30px;
     font-weight: lighter;
     text-transform: capitalize;
     text-align: center;
-    padding: 30px 0 10px 0;
-    margin: 0; 
-    border-top: 1px solid #dedbdc;
-    clear: both;
+    font-size: 1.875em;
 }
 
 #menu h3 {
-    font-size: 16px;
-    font-weight: 700;
     color: #77a466;
-    text-transform: uppercase;
     text-align: center;
-    padding: 30px;
+    padding: 20px 0;
+    font-size: 1em;
     margin: 0; 
 }
 
-#menu .third-width {
-    width: 390px;
-    height: auto;
-    float: left;
-    margin: 5px;
-    padding: 0 0 10px 0;
+/*cant figure out how to keep these three images from not staying aligned when flexing*/
+#menu .bottom-section,
+#menu .section-one,
+#menu .section-two,
+#menu .section-three {
+	width: 100%;
+    border: none;
 }
 
 #salad, #burrito, #tamales {
     max-width: 100%;
-    height: auto;
 }
 
 #menu p {
-    font-size: 14px;
     text-align: center;
+    font-size: 1em;
+    line-height: 24px;
+}
+
+/***** MEDIA QUERIES *****/
+
+/*Tablet*/
+@media all and (min-width: 768px) {
+	header nav ul {
+        padding: 0 10%;
+        display: flex;
+		justify-content: space-around;
+	}
+
+    .bottom-section {
+		justify-content: space-between;
+		align-items: flex-start;
+        border-top: 1px solid #eee;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		border-top: none;
+		flex-basis: 30%;
+	}
+
+	.section-two {
+		padding: 0 20px;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+}
+
+/*Desktop*/
+@media all and (min-width: 1200px) {
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		width: 40%
+	}
+
+	header nav ul {
+		padding: 0;
+        display: flex;
+        justify-content: space-between;
+	}
 }
